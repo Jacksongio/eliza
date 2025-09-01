@@ -1,0 +1,232 @@
+{
+    "NONE": {
+      "precedence": 0,
+      "rules": [
+        {
+          "decomp": [0],
+          "reass": [
+            ["PLEASE GO ON."],
+            ["THAT IS INTERESTING. PLEASE CONTINUE."],
+            ["TELL ME MORE."],
+            ["DO YOU FEEL STRONGLY ABOUT DISCUSSING SUCH THINGS?"],
+            ["I SEE."]
+          ]
+        }
+      ]
+    },
+    "MOTHER": {
+      "precedence": 5,
+      "rules": [
+        {
+          "decomp": [0, "MOTHER", 0],
+          "reass": [
+            ["TELL ME MORE ABOUT YOUR MOTHER."],
+            ["DOES YOUR MOTHER INFLUENCE YOU STRONGLY?"],
+            ["WHAT ELSE COMES TO MIND WHEN YOU THINK OF YOUR MOTHER?"]
+          ]
+        }
+      ]
+    },
+    "FATHER": {
+      "precedence": 5,
+      "rules": [
+        {
+          "decomp": [0, "FATHER", 0],
+          "reass": [
+            ["TELL ME MORE ABOUT YOUR FATHER."],
+            ["DOES YOUR FATHER INFLUENCE YOU STRONGLY?"],
+            ["WHAT ELSE COMES TO MIND WHEN YOU THINK OF YOUR FATHER?"]
+          ]
+        }
+      ]
+    },
+    "FAMILY": {
+      "precedence": 5,
+      "rules": [
+        {
+          "decomp": [0, "FAMILY", 0],
+          "reass": [
+            ["TELL ME MORE ABOUT YOUR FAMILY."],
+            ["WHO ELSE IN YOUR FAMILY", 3, "?"],
+            ["YOUR", 3, "?"],
+            ["WHAT ELSE COMES TO YOUR MIND WHEN YOU THINK OF YOUR", 3, "?"]
+          ],
+          "memory": {
+            "decomp": [0, "YOUR", 0],
+            "save": [
+              [0, "MY", 0, "=", "LETS DISCUSS FURTHER WHY YOUR", 3, "."],
+              [0, "MY", 0, "=", "EARLIER YOU SAID YOUR", 3, "."],
+              [0, "MY", 0, "=", "DOES THAT HAVE ANYTHING TO DO WITH THE FACT THAT YOUR", 3, "?"]
+            ]
+          }
+        }
+      ]
+    },
+    "I AM": {
+      "precedence": 1,
+      "rules": [
+        {
+          "decomp": [0, "I", "AM", 0],
+          "reass": [
+            ["HOW LONG HAVE YOU BEEN", 4, "?"],
+            ["DO YOU BELIEVE IT IS NORMAL TO BE", 4, "?"],
+            ["DO YOU ENJOY BEING", 4, "?"]
+          ]
+        }
+      ]
+    },
+    "HELLO": {
+      "precedence": 0,
+      "rules": [
+        {
+          "decomp": [0, "HELLO", 0],
+          "reass": [
+            ["HOW DO YOU DO. PLEASE STATE YOUR PROBLEM."]
+          ]
+        }
+      ]
+    },
+    "COMPUTER": {
+      "precedence": 50,
+      "rules": [
+        {
+          "decomp": [0, "COMPUTER", 0],
+          "reass": [
+            ["DO COMPUTERS WORRY YOU?"],
+            ["WHY DO YOU MENTION COMPUTERS?"],
+            ["WHAT DO YOU THINK MACHINES HAVE TO DO WITH YOUR PROBLEM?"]
+          ]
+        }
+      ]
+    },
+    "I WANT": {
+      "precedence": 3,
+      "rules": [
+        {
+          "decomp": [0, "I", "WANT", 0],
+          "reass": [
+            ["WHAT WOULD IT MEAN TO YOU IF YOU GOT", 4, "?"],
+            ["WHY DO YOU WANT", 4, "?"],
+            ["SUPPOSE YOU GOT", 4, "SOON."]
+          ]
+        }
+      ]
+    },
+    "I NEED": {
+      "precedence": 3,
+      "rules": [
+        {
+          "decomp": [0, "I", "NEED", 0],
+          "reass": [
+            ["WHY DO YOU NEED", 4, "?"],
+            ["WOULD IT REALLY HELP YOU TO GET", 4, "?"],
+            ["ARE YOU SURE YOU NEED", 4, "?"]
+          ]
+        }
+      ]
+    },
+    "I FEEL": {
+      "precedence": 2,
+      "rules": [
+        {
+          "decomp": [0, "I", "FEEL", 0],
+          "reass": [
+            ["DO YOU OFTEN FEEL", 4, "?"],
+            ["WHAT MAKES YOU FEEL", 4, "?"],
+            ["WHEN DO YOU USUALLY FEEL", 4, "?"]
+          ]
+        }
+      ]
+    },
+    "I THINK": {
+      "precedence": 2,
+      "rules": [
+        {
+          "decomp": [0, "I", "THINK", 0],
+          "reass": [
+            ["DO YOU REALLY THINK SO?"],
+            ["BUT YOU ARE NOT SURE YOU", 4, "."],
+            ["DO YOU DOUBT YOU", 4, "?"]
+          ]
+        }
+      ]
+    },
+    "YES": {
+      "precedence": 0,
+      "rules": [
+        {
+          "decomp": [0, "YES", 0],
+          "reass": [
+            ["YOU SEEM QUITE POSITIVE."],
+            ["YOU ARE SURE."],
+            ["I UNDERSTAND."]
+          ]
+        }
+      ]
+    },
+    "NO": {
+      "precedence": 0,
+      "rules": [
+        {
+          "decomp": [0, "NO", 0],
+          "reass": [
+            ["ARE YOU SAYING NO JUST TO BE NEGATIVE?"],
+            ["WHY NOT?"],
+            ["WHY NO?"]
+          ]
+        }
+      ]
+    },
+    "BECAUSE": {
+      "precedence": 0,
+      "rules": [
+        {
+          "decomp": [0, "BECAUSE", 0],
+          "reass": [
+            ["IS THAT THE REAL REASON?"],
+            ["WHAT OTHER REASONS MIGHT THERE BE?"],
+            ["DOES THAT REASON SEEM TO EXPLAIN ANYTHING ELSE?"]
+          ]
+        }
+      ]
+    },
+    "EVERYONE": {
+      "precedence": 2,
+      "rules": [
+        {
+          "decomp": [0, "EVERYONE", 0],
+          "reass": [
+            ["REALLY, EVERYONE?"],
+            ["SURELY NOT EVERYONE."],
+            ["CAN YOU THINK OF ANYONE IN PARTICULAR?"]
+          ]
+        }
+      ]
+    },
+    "ALWAYS": {
+      "precedence": 1,
+      "rules": [
+        {
+          "decomp": [0, "ALWAYS", 0],
+          "reass": [
+            ["CAN YOU THINK OF A SPECIFIC EXAMPLE?"],
+            ["WHEN?"],
+            ["REALLY, ALWAYS?"]
+          ]
+        }
+      ]
+    },
+    "NEVER": {
+      "precedence": 1,
+      "rules": [
+        {
+          "decomp": [0, "NEVER", 0],
+          "reass": [
+            ["NEVER?"],
+            ["ARE YOU SURE, NEVER?"],
+            ["WHAT WOULD IT TAKE FOR YOU TO", 3, "?"]
+          ]
+        }
+      ]
+    }
+  }
