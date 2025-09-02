@@ -177,7 +177,7 @@ def main(script_file='eliza_script.json'):
     eliza = Eliza(rules)
 
     # Welcome
-    print("HELLO, I'M ELIZA. WHAT'S ON YOUR MIND TODAY? (TYPE 'QUIT' TO EXIT)")
+    print("HELLO, I'M ELIZA. ASK ME A QUESTION OR TALK ABOUT ANYTHING? (TYPE 'QUIT' TO EXIT)")
 
     while True:
         user_input = input("> ").strip()
